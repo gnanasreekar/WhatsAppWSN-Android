@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/grey_90"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:textColor="@color/overlay_light_90"
+        android:text="Enter the number you want send whats app mesages, Add country code prior to the number, Ex: if the number is 11111111 then enter +9111111111" />
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        app:borderColor="@color/orange_500"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textColorHint="@color/colorAccent"
+            android:hint="Enter whatsapp number" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/whats"
+        android:drawableStart="@drawable/ic_whatsappdr"
+        android:drawablePadding="10dp"
+        style="@style/ButtonBorder.Accent"
+        android:text="open whatsapp" />
+
+</LinearLayout>
